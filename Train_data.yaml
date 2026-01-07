@@ -1,5 +1,5 @@
 
-path: /kaggle/input/helmate-detection
+path: /helmate-detection
 
 train: train/images
 val: valid/images
