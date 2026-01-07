@@ -19,10 +19,10 @@ if torch.cuda.is_available():
 # =========================================
 import os
 
-yaml_path = "/kaggle/working/helmet_data.yaml"
+yaml_path = "Train_data.yaml"
 
 yaml_content = """
-path: /kaggle/input/helmate-detection
+path: 
 
 train: train/images
 val: valid/images
@@ -78,7 +78,7 @@ print(metrics)
 # =========================================
 # STEP 7: CHECK BEST MODEL PATH
 # =========================================
-best_model_path = "/kaggle/working/helmet_training/yolo11n_helmet/weights/best.pt"
+best_model_path = "best.pt"
 
 print("Best model exists:", os.path.exists(best_model_path))
 print("Best model path:", best_model_path)
@@ -91,7 +91,7 @@ if os.path.exists(best_model_path):
     best_model = YOLO(best_model_path)
 
     best_model(
-        source="/kaggle/input/helmate-detection/test/images",
+        source="/test/images",
         conf=0.4,
         save=True
     )
@@ -103,3 +103,4 @@ if os.path.exists(best_model_path):
 # best_model.export(format="onnx")
 
 print("✅ Training completed successfully")
+
