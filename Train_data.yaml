@@ -1,5 +1,5 @@
 
-path: /helmate-detection
+path: /helmet-detection
 
 train: train/images
 val: valid/images
