@@ -1,0 +1,11 @@
+
+path: /kaggle/input/helmate-detection
+
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 2
+names:
+  - With Helmet
+  - Without Helmet
