@@ -16,7 +16,7 @@ CLASS_NAMES = {
 # INPUT / OUTPUT
 # =========================
 VIDEO_PATH = r"video1.mp4"
-OUTPUT_PATH = "output2.mp4"
+OUTPUT_PATH = "output.mp4"
 
 cap = cv2.VideoCapture(VIDEO_PATH)
 
@@ -101,4 +101,5 @@ out.release()
 cv2.destroyAllWindows()
 
 print("✅ Processing complete. Output saved:", OUTPUT_PATH)
+
 
